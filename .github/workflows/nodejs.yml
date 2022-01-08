@@ -26,11 +26,11 @@ jobs:
     #    node-version: ${{ matrix.node-version }}
     #    cache: 'npm'
     - run: | 
-            echo '''DB_HOST=127.0.0.1
-     DB_PORT=3306
-     DB_DATABASE= "testingdatabase"
-     DB_USERNAME= "dhiru"
-     DB_PASSWORD= "Xcntsqwer@1234" ''' > .env-example
+       echo '''DB_HOST=127.0.0.1
+       DB_PORT=3306
+       DB_DATABASE= "testingdatabase"
+       DB_USERNAME= "dhiru"
+       DB_PASSWORD= "Xcntsqwer@1234" ''' > .env-example
     - run: echo "In the Ubuntu "
     - run: echo "DB_HOST= 127.0.0.1" 
     - run: npm install
