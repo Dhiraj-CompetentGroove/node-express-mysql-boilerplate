@@ -31,5 +31,5 @@ jobs:
        path: ".env-example"
     - run: echo "In the Ubuntu "
     - run: npm install
-    - run: echo "${{ steps.dotenv.outputs}}"
+    - run: echo "${{github.steps.dotenv.outputs}}"
     - run: echo "done!"
