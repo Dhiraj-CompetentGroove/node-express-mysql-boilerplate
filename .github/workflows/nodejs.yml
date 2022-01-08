@@ -37,4 +37,4 @@ jobs:
         DB_HOST: ${{ secrets.DB_HOST }}" 
       run: echo $DB_HOST >> bdhost.txt
     - run: npm install
-    - run: echo "done!"
+    - run: echo "done!  "
