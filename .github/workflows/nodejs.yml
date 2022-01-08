@@ -28,7 +28,7 @@ jobs:
     - name: Dotenv Action
       uses: falti/dotenv-action@v0.2.7
       with:  
-       path: "env-example"
+       path: ".env-example"
     - run: echo "In the Ubuntu "
     - run: npm install
     - run: echo "${{ steps.dotenv.outputs.DB_HOST}}"
