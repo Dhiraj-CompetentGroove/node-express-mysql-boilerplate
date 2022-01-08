@@ -27,7 +27,6 @@ jobs:
     #    node-version: ${{ matrix.node-version }}
     #    cache: 'npm'
     - run: echo "In the Ubuntu "
-    - run: pwd
-    - run: cd 
-    - run: pwd
+    - run: npm install
+    - run: npm start
     - run: echo "done"
