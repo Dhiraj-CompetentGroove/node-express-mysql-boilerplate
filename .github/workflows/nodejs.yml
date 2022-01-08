@@ -33,7 +33,7 @@ jobs:
        DB_PASSWORD= "Xcntsqwer@1234" ''' > .env-example
     - run: echo "In the Ubuntu "
     - run: | 
-        echo "${{github.secrets}}" 
+        echo "${{ secrets.DB_HOST }}" 
     - run: npm install
     - run: echo " ${{ github.steps }} "
     - run: echo "done!"
