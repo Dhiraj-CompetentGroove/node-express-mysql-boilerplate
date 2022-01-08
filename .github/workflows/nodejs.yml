@@ -28,5 +28,4 @@ jobs:
     #    cache: 'npm'
     - run: echo "In the Ubuntu "
     - run: npm install
-    - run: npm start
     - run: echo "done!"
