@@ -29,10 +29,7 @@ jobs:
       uses: falti/dotenv-action@v0.2.7
       with:  
        path: ".env-example"
-    - env:
-        id: dotenv
-        uses: ./.github/actions/dotenv-action
     - run: echo "In the Ubuntu "
     - run: npm install
-    - run: echo "${{github.steps.dotenv.outputs}}"
+    - run: echo "${{github.steps}}"
     - run: echo "done!"
