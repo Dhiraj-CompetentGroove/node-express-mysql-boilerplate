@@ -25,10 +25,7 @@ jobs:
     #  with:
     #    node-version: ${{ matrix.node-version }}
     #    cache: 'npm'
-    - name: Dotenv Action
-      uses: falti/dotenv-action@v0.2.7
-      with:  
-       path: ".env-example"
+    - run: echo "DB_HOST= 127.0.0.1" >> .env
     - run: echo "In the Ubuntu "
     - run: npm install
     - run: echo " ${{ github.steps }} "
